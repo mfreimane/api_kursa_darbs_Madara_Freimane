@@ -2,7 +2,7 @@ require 'rest-client'
 
 def sign_up_positive
   payload = {
-      'email' => 'madara.freimane@test.com',
+      'email' => 'madara1@test.com',
       'firstName' => 'Madara',
       'lastName' => 'Freimane',
       'password' =>  'parole123'

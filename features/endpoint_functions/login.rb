@@ -12,16 +12,11 @@ def login_positive(user)
 
   #   check if 200OK is received
   assert_status_code(200, response, "Login")
-
   response_hash = JSON.parse(response)
-  # response_hash['firstName']
-  #
   # check if correct user is returned
   assert_equal(user.email, response_hash['email'], 'Logged in user is not correct!')
-
   user.firstName = response_hash['firstName']
   user.lastName = response_hash['lastName']
   user.id = response_hash['id']
   user.auth_token = response.headers[:authorization]
-
 end
