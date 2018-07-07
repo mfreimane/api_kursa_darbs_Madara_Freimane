@@ -11,7 +11,5 @@ def sign_up_positive
                       headers: {'Content-Type' => 'application/json'},
                       cookies: {},
                       payload: payload)
-  # assert_status_code(200, response, "Sign up")
-  #Check if 200OK is received
   assert_equal(200, response.code, "Failed to create a new account! Response : #{response}")
 end

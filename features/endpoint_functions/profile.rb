@@ -20,13 +20,10 @@ def check_profile_info(user)
 end
 
 def change_firsName_and_lastName(user)
-
+  @user_data = user.clone
   user.firstName = "firstname#{Time.now.to_i}"
   user.lastName = "lastname#{Time.now.to_i}"
-
   payload = {
-      # :login => user.email,
-      # :password => user.password
       'firstName' => user.firstName,
       'lastName' => user.lastName
   }.to_json
@@ -45,33 +42,20 @@ def change_firsName_and_lastName(user)
   puts response_hash
   puts ['lastName']
   assert_equal(user.lastName, response_hash['lastName'], 'lastName is not correct!')
-
-  # @test_user.set_session_cookie(response.cookies)
-  #
-  # @test_user.set_user_id(response_hash['user_id'])
-
 end
 
-def return_the_data_to_its_original_state(user, firstName, lastName)
-
+def return_the_data_to_its_original_state(user)
   payload = {
-      'firstName' => firstName,
-      'lastName' => lastName
+      'firstName' => user.firstName,
+      'lastName' => user.lastName
   }.to_json
   response = API.put('http://195.13.194.180:8090/api/profile',
-                     headers: {'Authorization' => user.auth_token, 'Content-Type' => 'application/json'},
+                     headers: {'Content-Type' => 'application/json', 'Authorization' => user.auth_token},
                      cookies: {},
                      payload: payload)
   assert_status_code(200, response, "firstName and lastName is changed!")
   response_hash = JSON.parse(response)
-  # Check if firstName is correct
+  user.setData(response_hash)
+  @user = user.clone
   puts response_hash
-  puts ['firstName']
-
-
-  # assert_equal(user.firstName, response_hash['firstName'], 'firstName is not correct!')
-  # # Check if lastName is correct
-  # puts response_hash
-  # puts ['lastName']
-  # assert_equal(user.lastName, response_hash['lastName'], 'lastName is not correct!')
 end

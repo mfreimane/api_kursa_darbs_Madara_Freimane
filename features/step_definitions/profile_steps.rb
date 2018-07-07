@@ -7,5 +7,5 @@ And(/^I change firstName and lastName$/) do
 end
 
 And(/^I return the data to its original state$/) do
-  return_the_data_to_its_original_state(@user)
+  return_the_data_to_its_original_state(@user_data)
 end
