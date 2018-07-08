@@ -32,6 +32,7 @@ require 'json'
 
 job_name = ARGV[0]
 job_number = ARGV[1]
+job_url = ARGV[2]
 
 thumbnail = { 'url' => 'https://pbs.twimg.com/profile_images/662215297378574336/YOOD0ijr_400x400.png'}
 
@@ -41,6 +42,7 @@ fields.push({'name' => 'Autors', 'value' => 'Madara'})
 fields.push({'name' => 'Merķis', 'value' => 'kurss'})
 fields.push({'name' => 'Job', 'value' => job_name})
 fields.push({'name' => 'Build number', 'value' => job_number})
+fields.push({'name' => 'Build URL', 'value' => job_url})
 
 embed = []
 
