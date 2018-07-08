@@ -5,5 +5,6 @@ end
 
 And(/^I update another User blog post$/) do
   # @post = Post.new("content", "title")
+  @post = Post.new('This is content', 'This is title')
   update_another_user_blog_post(@blogpost_id, @user, @post)
 end
