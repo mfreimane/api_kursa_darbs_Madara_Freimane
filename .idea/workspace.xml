@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fe9b813d-596e-442b-8715-ca2266bac2df" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/endpoint_functions/blog.rb" beforeDir="false" afterPath="$PROJECT_DIR$/features/endpoint_functions/blog.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/step_definitions/blog_steps.rb" beforeDir="false" afterPath="$PROJECT_DIR$/features/step_definitions/blog_steps.rb" afterDir="false" />
-    </list>
+    <list default="true" id="fe9b813d-596e-442b-8715-ca2266bac2df" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,11 +29,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="blog_steps.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="blog_steps.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/features/step_definitions/blog_steps.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="50" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
+            <state relative-caret-position="120">
+              <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -60,11 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="blog.rb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="blog.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/features/endpoint_functions/blog.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+            <state relative-caret-position="405">
+              <caret line="27" column="3" lean-forward="true" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -134,8 +130,8 @@
         <option value="$PROJECT_DIR$/features/domain_objects/user.rb" />
         <option value="$PROJECT_DIR$/features/blog.feature" />
         <option value="$PROJECT_DIR$/features/domain_objects/blogpost.rb" />
-        <option value="$PROJECT_DIR$/features/step_definitions/blog_steps.rb" />
         <option value="$PROJECT_DIR$/features/endpoint_functions/blog.rb" />
+        <option value="$PROJECT_DIR$/features/step_definitions/blog_steps.rb" />
       </list>
     </option>
   </component>
@@ -254,7 +250,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48733000" />
+    <option name="totallyTimeSpent" value="49039000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -631,17 +627,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features/endpoint_functions/blog.rb">
+    <entry file="file://$PROJECT_DIR$/features/step_definitions/blog_steps.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+        <state relative-caret-position="120">
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features/step_definitions/blog_steps.rb">
+    <entry file="file://$PROJECT_DIR$/features/endpoint_functions/blog.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="50" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
+        <state relative-caret-position="405">
+          <caret line="27" column="3" lean-forward="true" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
         </state>
       </provider>
     </entry>
